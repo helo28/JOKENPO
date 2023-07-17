@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKENPO</title>
+</head>
+<body>
+
+    <h1>JOKENPO</h1>
+    <hr>
+    <p id="partida">PARTIDA: </p>
+    <hr>
+    <h3 id="jogador">JOGADOR: </h3>
+
+    <!--COLOCANDO A IMAGEM-->
+    <img src="img/pedra_e_papel.png"><br> 
+
+    <!--TODOS PRECISAM SER G1 PARA QUE ELE ENTENDA QUE TODOS FAZEM PARTE DO MESMO GRUPO-->
+    <!--ESSES NOMES VÃO EM BAIXO DA IMAGEM-->
+    <input type="radio" name="g1" id="pedra"> PEDRA
+    <input type="radio" name="g1" id="papel"> PAPEL
+    <input type="radio" name="g1" id="tesoura"> TESOURA <br><br>
+
+    <!--CRIANDO O BOTÃO DE JOGAR-->
+    <input type="button" value="JOGAR" onclick="jogar()">
+    <hr>
+
+    <!--COLOCANDO O CAMPO DE RESULTADO-->
+    <p id="resultado">RESULTADO: </p>
+    <hr>
+    <h3 id="computador">COMPUTADOR: </h3>
+
+    <img src="img/pc.png" id="pc" width="200" height="150">
+
+    <script src="script.js"></script>
+</body>
+</html>
